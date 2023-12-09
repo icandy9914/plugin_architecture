@@ -5,8 +5,9 @@
  */
 
 namespace Inc\Pages;
+use \Inc\Base\BaseController;
 
-class Admin 
+class Admin extends BaseController
 {
 
     public function register()
@@ -22,7 +23,8 @@ class Admin
 
     public function admin_menu_index()
     {
-        require_once PLUGIN_PATH.'templates/admin.php'; // included activation file here
+        echo $this->plugin_path;
+        require_once $this->plugin_path. 'templates/admin.php'; // included activation file here
         // code goes here
     }
     
