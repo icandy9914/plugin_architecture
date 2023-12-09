@@ -23,7 +23,6 @@ class Admin extends BaseController
 
     public function admin_menu_index()
     {
-        echo $this->plugin_path;
         require_once $this->plugin_path. 'templates/admin.php'; // included activation file here
         // code goes here
     }
